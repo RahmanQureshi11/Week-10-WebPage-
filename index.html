@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car List to Buy</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> 
+    <!--This for linking the file in this case is bootstrap.css-->
+
+   </head>
+<body>
+
+   <div class="container">
+      <h1 class="text-center">Car List to Buy</h1>
+  
+      <!-- Form to add a new car -->
+      <div class="form-container">
+        <form id="carForm">
+          <div class="form-group">
+            <label for="carName">Car Name:</label> <!-- For Entering Car Name-->
+            <input type="text" class="form-control" id="carName" placeholder="Car Name">
+          </div>
+          <div class="form-group">
+            <label for="carModel">Car Model:</label> <!--For Entering Car Model -->
+            <input type="text" class="form-control" id="carModel" placeholder="Car Model" >
+          </div>
+          <div class="form-group">
+            <label for="carPrice">Car Price:</label>  <!--For Entering Car Price  -->
+            <input type="text" class="form-control" id="carPrice"   placeholder="Car Price ">
+          </div>
+          <!--This button will add the car to the table. -->
+          <button type="submit" class="btn btn-primary">Add Car</button> 
+        </form>
+      </div>
+  
+      <!-- Table to display car list -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Car Name</th>
+            <th>Car Model</th>
+            <th>Car Price</th>
+          </tr>
+        </thead>
+        <tbody id="carTableBody">
+          <!-- Table body will be filled in  using  JavaScript -->
+        </tbody>
+   
+    <script src="Car.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script> 
+    <!--included jquery because it will be need for some boostrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+     <!--Also included bootstrap bundle.js-->
+</body>
+</html>
